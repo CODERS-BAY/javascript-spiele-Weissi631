@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    background-image: url(../images/Hub/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ----- Mainpage Design ----- */
+header {
+    background-image: url(../images/Hub/header.png);
+    background-size: cover;
+    height: 100px;
+}
+
+.header-container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100px;
+}
+
+header img {
+    margin-top: 20px;
+}
+
+.active {
+    display: block;
+}
+
+#popup {
+    position: absolute;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    border: 2px solid #000;
+    z-index: 100;
+    top: 100px; left: 200px; bottom: 100px; right: 200px;
+}
+
+/* ----- Navigation ----- */
+
+nav ul li {
+	background:linear-gradient(to bottom, #ffffff 5%, #e7f8ff 100%);
+	border-radius:50px;
+	border:2px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family: 'Road Rage', cursive;
+	font-size:1.8rem;
+	padding:15px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+    margin: 10px;
+}
+
+nav ul li:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+
+nav ul li:active {
+	position:relative;
+	top:1px;
+}
+
+/* ----- Page Content ----- */
+.content-container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 85vh;
+}
+
+.content-container_upper-half {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container_lower-half {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    height: 100px;
+}
+
+.arrow_and_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+}
+
+.arrow_and_description p {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.content-container img {
+    border-radius: 50px;  
+}
+
+.active-img:hover {
+    transform: scale(1.1);
+}
+
+.active-img {
+    transition: all 300ms;
+    border: 2px solid #000;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+
+/* ----- Common Game Styles ----- */
+
+.screen {
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #777;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 40px;
+}
+
+.active {
+    display: flex;
+}
+
+p {
+    text-align: center;
+    margin: 0 20px;
+    max-width: 400px;
+}
+
+h1, h2 {
+    margin-top: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.level-select-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.level-select-container h2:hover {
+    text-decoration: underline;
+}
+
+.input-container {
+    display: flex;
+    width: 50%;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.input-container-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-family: 'Road Rage', cursive;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    background-color: #EF2D56;
+    border-radius: 0.15rem;
+    padding: 0.3rem 0.4rem;
+    border-style: none;
+    border-width: 0rem;
+    width: 100%;
+    text-align: center;
+ }
+
+ input {
+     text-align: center;
+ }
+
+ .selected {
+     border: 1px solid #000;
+     border-radius: 25px;
+ }
+
+ .selected2 {
+    text-decoration: underline;
+}
+
+

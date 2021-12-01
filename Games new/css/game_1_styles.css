@@ -1,0 +1,53 @@
+button {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:42px;
+	border:2px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:9px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+button:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+
+.planet-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+}
+
+.planet-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    margin: 10px 10px;
+}
+
+.planet-detail:hover {
+    border: 1px solid #000;
+    border-radius: 25px;
+}
+
+h2 {
+    color: #000;
+}
+
+label {
+    border-color: #EF2D56;
+    color: #FFFFFF;
+}
+
+input {
+    border-color: #EF2D56;
+}
+

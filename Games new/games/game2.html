@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rampart+One&family=Road+Rage&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/game_2_styles.css" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div>
+                <img src="../images/Hub/header_logo.png" alt="logo" />
+            </div>
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Home</li></a>
+                    <a href="../games/game1.html"><li>Spiel 1</li></a>
+                    <a href="../games/game2.html"><li>Spiel 2</li></a>
+                    <a href="../games/game3.html"><li>Spiel 3</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="screen active">
+            <h2>Wilkommen zu Schere, Stein, Papier</h2>
+            <p>Wie viele Versuche möchtest du spielen?</p>
+            <input type="number" id="tryCount" name="tryCount" />
+            <div class="button-container">
+                <a href="../index.html"><button>Spiel verlassen</button></a>
+                <button onclick="readTryCount()">Spiel starten</button>
+            </div>
+        </div> 
+        <div class="screen">
+            <h2>Wähle aus, was du werfen möchtest</h2>
+            <div id="weapons">
+                <div class="weaponDetail">
+                <h3>Stein</h3>
+                <img src="../images/game2/option1.png" alt="Stein" onclick="play(1)"/>
+                </div>
+                <div class="weaponDetail">
+                <h3>Papier</h3>
+                <img src="../images/game2/option2.png" alt="Papier" onclick="play(2)"/>
+                </div>
+                <div class="weaponDetail">
+                <h3>Schere</h3>
+                <img src="../images/game2/option3.png" alt="Schere" onclick="play(3)"/>
+                </div>
+            </div>  
+            <div id="battlefield">
+                <div id="player">
+                    <h2>PLAYER</h2>
+                    <img id="playerImage" src="../images/game2/player.png" alt="player" />
+                    <h3 id="userPoints">0</h3>
+                </div>
+                <div id="versusText">
+                    <h1>VS</h1>
+                </div>
+                <div id="com">
+                    <h2>COM</h2>
+                    <img id="comImage"src="../images/game2/com.png" alt="com" />
+                    <h3 id="comPoints">0</h3>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/gamescripts/game2.js"></script>
+    <script type="text/javascript" src="../js/common_commands.js"></script>
+    <script type="text/javascript" src="../js/lib.js"></script>
+</body>
+</html>
