@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rampart+One&family=Road+Rage&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/game_3_styles.css" />
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div>
+                <img src="../images/Hub/header_logo.png" alt="logo" />
+            </div>
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Home</li></a>
+                    <a href="../games/game1.html"><li>Spiel 1</li></a>
+                    <a href="../games/game2.html"><li>Spiel 2</li></a>
+                    <a href="../games/game3.html"><li>Spiel 3</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class=content-container>
+            <div class="screen active">
+                <h1> Willkommen beim Number Guesser</h1>
+                <p> Errate die richtige Zahl und gewinne! </p>
+                <div class="button-container">
+                    <a href="../index.html"><button>Spiel verlassen</button></a>
+                    <button class="next" onclick="nextScreen(this)">Weiter</button>
+                </div>
+            </div>
+            <div class="screen">
+                <h2>Lege die höchstmögliche Zahl fest, die es zu erraten gibt.</h2>
+                <p> Je höher du deine Zahl wählst, dest schwieriger wird die Aufgabe.</p>
+                <label class="labelScreen2" for="difficulty">Höchste Zufallszahl</label>
+                <input type="number" id="difficulty" />
+                <label class="labelScreen2" for="counterInput">Lege noch fest, wie viele Versuche du haben möchtest!</label>
+                <input type="number" id="counterInput" />
+                <div class="button-container">
+                    <button class="prev" onclick="previousScreen(this)">Zurück</button>
+                    <button class="next" onclick="nextScreen(this), setNumber()">Weiter</button>
+                </div>
+    
+            </div>
+            <div class="screen">
+                <h2>Los geht's!</h2>
+                <div class="playerArea">
+                    <div class="playerLeft">
+                        <label for="playerInput">Gib ein Zahl ein und drücke auf "Let's go!"</label>
+                        <input type="number" id="playerInput" value="1" />
+                    </div>
+                    <div class="playerRight">
+                        <img id="feedback" src="../images/game3/empty.png" alt="result"/>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button onclick="giveUp()">AUFGEBEN</button>
+                    <button onclick="compareNumbers()">Let's go!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/gamescripts/game3.js"></script>
+    <script type="text/javascript" src="../js/common_commands.js"></script>
+    <script type="text/javascript" src="../js/lib.js"></script>
+</body>
+</html>
